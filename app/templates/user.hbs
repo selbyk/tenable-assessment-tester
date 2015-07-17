@@ -1,0 +1,21 @@
+<h1 class="page-header">User Auth</h1>
+
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active">{{link-to 'Info' 'user.index'}}</li>
+  <li role="presentation">{{link-to 'Register' 'user.new'}}</li>
+  <li role="presentation">{{link-to 'Login' 'user.login'}}</li>
+  <li role="presentation"><a href="#" {{action 'logout'}}>Logout</a></li>
+</ul>
+
+{{#if currentUser}}
+  Welcome back, <b>{{person.firstName}} {{person.lastName}}</b>!
+{{else}}
+  <h4>You are not authenticated, please login or register.</h4>
+  <!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+{{/if}}
+
+{{outlet}}

@@ -1,3 +1,54 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Programming Assessment Tests</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Server Configs</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-{{outlet}}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Navigation</div>
+            <div class="panel-body">
+          <ul class="nav ">
+            <li class="active">{{link-to 'User Auth' 'user'}}</li>
+            <li>{{link-to 'Server Configs' 'configs'}}</li>
+            <li>{{link-to 'Documentation' 'docs'}}</li>
+          </ul>
+        </div>
+        </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading">Auth Status</div>
+          <div class="panel-body">
+        Not Authenticated!
+      </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">Request Info</div>
+          <div class="panel-body">
+        N/A
+      </div>
+        </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          {{outlet}}
+
+        </div>
+      </div>
+    </div>
