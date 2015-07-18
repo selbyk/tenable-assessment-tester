@@ -1,6 +1,6 @@
 # Testing Frontend for Tenable Programming Assessment
 
-Should be live at [tenable.selby.io.s3-website-us-east-1.amazonaws.com](http://tenable.selby.io.s3-website-us-east-1.amazonaws.com)
+Should be live at [tenable.selby.io](http://tenable.selby.io)
 
 Shouldn't be working right now.  API spec documentation should be ready, though
 
